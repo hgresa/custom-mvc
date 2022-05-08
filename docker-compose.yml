@@ -1,0 +1,12 @@
+version: "3"
+services:
+    mysql:
+        image: mysql
+        restart: "always"
+        volumes:
+            - /storage/docker/developers-alliance-test-task:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: 123
+        ports:
+            - "3307:3306"
+

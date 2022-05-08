@@ -1,0 +1,70 @@
+.container {
+  margin: 50px 200px 0 200px;
+}
+@media (max-width: 750px) {
+  .container {
+    margin: unset;
+  }
+}
+.container #submit_button,
+.container .delete_button {
+  display: block;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border: none;
+}
+.container #submit_button {
+  background-color: green;
+}
+.container .delete_button {
+  background-color: red;
+}
+.container .table-container table {
+  color: #333;
+  background: white;
+  border: 1px solid grey;
+  font-size: 12pt;
+  border-collapse: collapse;
+  width: 100%;
+}
+.container .table-container table thead tr th {
+  color: #777;
+  background: rgba(0, 0, 0, 0.1);
+}
+.container .table-container table tbody tr td {
+  padding: 0.5em;
+  border: 1px solid lightgrey;
+}
+.container .form-container #signup_form .input_container {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 750px) {
+  .container .form-container #signup_form .input_container .input_container {
+    flex-direction: row;
+  }
+  .container .form-container #signup_form .input_container .input_container .input {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+.container .form-container #signup_form .input_container input {
+  display: block;
+  width: 100%;
+  padding: 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  flex-basis: 100%;
+}
+.container .form-container #signup_form .input_container span {
+  color: red;
+}
+.container .form-container #signup_form .success_message {
+  display: none;
+  color: green;
+  font-weight: bold;
+}
