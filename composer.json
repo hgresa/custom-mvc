@@ -1,0 +1,16 @@
+{
+    "name": "hgresa/oop-form",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "toma margishvili"
+        }
+    ],
+    "require": {
+      "ext-pdo": "*"
+    }
+}
