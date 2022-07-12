@@ -34,10 +34,7 @@ class Model extends Database
         $statement->execute([$id]);
     }
 
-    /**
-     * @return array
-     */
-    public function loadCollection(): array
+    public function loadCollection(): Collection
     {
         $tableName = $this->getTableName();
         $sql = "SELECT * FROM $tableName";
@@ -58,6 +55,6 @@ class Model extends Database
             $objectCollection[] = $object;
         }
 
-        return $objectCollection;
+        return Collection::make($objectCollection);
    }
 }
